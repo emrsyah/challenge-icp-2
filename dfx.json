@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hacker-house-challenge-2-backend": {
+      "main": "src/hacker-house-challenge-2-backend/main.mo",
+      "type": "motoko"
+    },
+    "hacker-house-challenge-2-frontend": {
+      "dependencies": [
+        "hacker-house-challenge-2-backend"
+      ],
+      "source": [
+        "src/hacker-house-challenge-2-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hacker-house-challenge-2-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
